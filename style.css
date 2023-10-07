@@ -1,0 +1,366 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  line-height: 1.3;
+  position: relative;
+  font-weight: 500;
+}
+
+:root {
+  --primary-Clr: hsl(12, 88%, 59%);
+  --secondary-Clr: hsl(228, 39%, 23%);
+}
+
+#header {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 6%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: end;
+}
+
+.nav-links ul li {
+  display: inline-block;
+}
+
+.nav-links ul li {
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: 530;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: hsl(12, 88%, 59%);
+  display: block;
+  transition: 0.4s ease-in;
+  margin: auto;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.nav-btn {
+  padding: 6px 20px;
+  font-size: 17px;
+  background: hsl(12, 88%, 59%);
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  margin-left: 20%;
+  box-shadow: 5px 5px 5px hsl(228, 39%, 23%);
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  z-index: 3;
+}
+
+.nav-btn:hover {
+  opacity: 0.6;
+}
+
+.table-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.section-1 {
+  display: flex;
+  /* gap: 40px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content {
+  width: 40%;
+  height: 65vh;
+  /* background: tan;    */
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 45px;
+  color: hsl(228, 39%, 23%);
+  padding-bottom: 8%;
+}
+
+.description {
+  opacity: 0.6;
+  padding-bottom: 8%;
+  font-size: 18px;
+}
+
+.btn1 {
+  margin-left: 0px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.open,
+.close {
+  display: none;
+}
+
+/**************** 
+The below code is for the hero section 
+***************/
+#hero {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0px;
+}
+
+.hero-content {
+  width: 40%;
+  height: 34vh;
+}
+
+.hero-content-title {
+  font-size: 36px;
+  color: hsl(228, 39%, 23%);
+  padding-bottom: 5%;
+}
+
+.hero-description {
+  opacity: 0.6;
+}
+
+.hero-section-2 {
+  height: 81vh;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.content-two-wripper {
+  width: 100%;
+  height: 22vh;
+  display: flex;
+  gap: 10px;
+}
+
+.content-two-wripper-card {
+  width: 15%;
+  height: 5vh;
+}
+
+.wripper-card-1 {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(12, 88%, 59%);
+  color: #fff;
+}
+
+.wripper-card-2 {
+  height: 21.9vh;
+  width: 90%;
+}
+
+.wripper-card-title {
+  font-size: 20px;
+  color: hsl(228, 39%, 23%);
+  padding-bottom: 5%;
+}
+
+.wripper-card-description {
+  opacity: 0.7;
+}
+
+/*****************
+ The below  codes are for the testimonail section  
+*****************/
+#testimonail {
+  text-align: center;
+  position: relative;
+}
+
+.table-pattern1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.testimonial-wripper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 8% 0px 3% 0px;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+}
+
+.testimonail-content {
+  width: 30%;
+  height: 30vh;
+  background: hsl(0, 0%, 98%);
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+
+.client-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -40px;
+  right: 40%;
+}
+
+.client-name {
+  padding: 5% 0px;
+}
+
+.client-description {
+  opacity: 0.5;
+}
+
+.nav-btn2 {
+  margin-left: 0px;
+  margin-bottom: 8%;
+}
+
+/*****************
+ The below  codes are for the Get-Started section  
+*****************/
+#get-started {
+  height: 32vh;
+  background: hsl(12, 88%, 59%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started-content {
+  width: 40%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started-title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.get-started-btn {
+  background: #fff;
+  color: hsl(12, 88%, 59%);
+  padding: 3px 40px;
+  font-size: 16px;
+}
+
+/*****************
+ The below  codes are for the footer section  
+*****************/
+#footer {
+  height: 40vh;
+  background: #000;
+  padding: 40px 0px 40px 0px;
+}
+
+.footer-conteiner {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 22%;
+  height: 26vh;
+}
+
+.ion-icon {
+  color: #fff;
+  padding-top: 30%;
+  font-size: 1.3rem;
+}
+
+.footer-links ul li {
+  list-style-type: none;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0.7;
+  display: inline-block;
+  padding-bottom: 5%;
+}
+
+#search {
+  height: 6vh;
+  width: 80%;
+  border-radius: 20px;
+  padding-left: 20px;
+  border: 2px solid transparent;
+  outline: none;
+}
+
+#submit {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  background: hsl(12, 88%, 59%);
+  color: #fff;
+}
+
+.copy-right {
+  padding-top: 25%;
+  color: #fff;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.attribution {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  padding-top: 2% 0px 2% 0px;
+}
+
+.attribution a {
+  color: hsl(12, 88%, 59%);
+}

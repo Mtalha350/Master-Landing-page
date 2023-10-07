@@ -1,0 +1,153 @@
+/* Media Query  */
+
+@media screen and (max-width: 950px) {
+  .nav-links {
+    position: absolute;
+    top: -320px;
+    left: 45px;
+    width: 80%;
+    height: 300px;
+    background: #fff;
+    text-align: center;
+    padding: 15% 0px 4% 4px;
+    box-shadow: 4px 4px 4px #808080;
+    z-index: 2;
+    border-radius: 5px;
+  }
+  .nav-links ul li {
+    display: block;
+    padding: 0px 0px 15px 0px;
+    font-size: 22px;
+    color: hsl(228, 39%, 23%);
+  }
+  .nav-btn-main {
+    display: none;
+  }
+  .open,
+  .close {
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    color: red;
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.6s ease-in;
+  }
+  /* Text content */
+  .section-1 {
+    flex-direction: column-reverse;
+    gap: 5px;
+    margin-bottom: 20%;
+  }
+  .text-content {
+    width: 100%;
+    height: 45vh;
+    text-align: center;
+  }
+  .section-title {
+    font-size: 35px;
+  }
+  .description {
+    font-size: 17px;
+  }
+}
+/* hero */
+
+/* Media Query  */
+@media screen and (max-width: 950px) {
+  #hero {
+    flex-direction: column;
+  }
+  .hero-content {
+    width: 90%;
+  }
+  .hero-section-1 {
+    text-align: center;
+  }
+  .hero-section-2 {
+    height: 70vh;
+  }
+  .hero-content-title {
+    font-size: 30px;
+  }
+  .content-two-wripper {
+    gap: 5px;
+  }
+  .hero-description {
+    font-size: 17px;
+  }
+  .wripper-card-title {
+    background: #fff0ec;
+    font-size: 19px;
+  }
+  .wripper-card-description {
+    font-size: 16px;
+    padding-top: 3%;
+  }
+}
+
+/* testimonial */
+
+/* Media Query  */
+@media screen and (max-width: 950px) {
+  .testimonial-wripper {
+    flex-direction: column;
+    gap: 55px;
+  }
+  .testimonial-title {
+    padding-bottom: 10%;
+  }
+  .testimonail-content {
+    width: 90%;
+    height: 28vh;
+  }
+  .client-name {
+    font-size: 18px;
+  }
+  .client-description {
+    font-size: 17px;
+  }
+}
+
+/* Media Query  */
+@media screen and (max-width: 950px) {
+  #get-started {
+    flex-direction: column;
+    gap: 10px;
+    height: 23vh;
+  }
+  .get-started-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* footer */
+
+/* Media Query  */
+@media screen and (max-width: 950px) {
+  #footer {
+    height: 90vh;
+  }
+  .footer-conteiner {
+    flex-direction: column-reverse;
+  }
+  .footer-content {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5%;
+  }
+  .footer-content1 {
+    padding: 0px 80px;
+  }
+  ion-icon {
+    padding-top: 10%;
+    font-size: 32px;
+  }
+  .copy-right {
+    padding-top: 10%;
+    text-align: center;
+  }
+}
